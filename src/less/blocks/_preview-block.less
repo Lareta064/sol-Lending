@@ -1,0 +1,246 @@
+.preview {
+  margin-top: 64px;
+  @media (max-width: 1199px) {
+    margin-top: 34px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 14px;
+  }
+
+
+  @media (max-width: 767px) {
+    .preview-content__data {
+      margin-top: 24px;
+    }
+  }
+
+  .contact-form {
+    position: relative;
+    background-color: @grey;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 16px;
+    overflow: hidden;
+
+    @media (max-width: 767px) {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 160px;
+    }
+
+    .contact-form-title {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .contact-form .title-2 h2{
+      @media(max-width: 991px){
+        margin-bottom: 20px;
+      }
+    }
+
+    .subtitle-text {
+      margin-bottom: 60px;
+
+      @media(max-width:991px){
+        margin-bottom: 30px;
+      }
+
+      p.text-2 {
+        font-size: 20px;
+      }
+    }
+
+    .form-footer {
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    .form-btn {
+      margin-bottom: 0;
+    }
+
+    .subtitle-img {
+      width: 400px;
+      position: absolute;
+      top: 55px;
+      right: 0;
+      filter: drop-shadow(0px 10px 40px rgba(37, 42, 52, 0.25));
+
+      @media(min-width: 992px) and (max-width: 1364px){
+        width: 290px;
+        top: 150px;
+      }
+
+
+      @media (max-width: 991px) {
+        width: 295px;
+        top: inherit;
+        left: 22px;
+        bottom: 0;
+      }
+
+      @media(min-width: 426px) and (max-width: 768px){
+          bottom: -26px;
+          left: inherit;
+      }
+
+      @media(max-width: 374px){
+        left: -8px;
+      }
+    }
+
+    .subtitle-img .img-desk {
+      display: block;
+
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+
+    .subtitle-img .img-mob {
+      display: none;
+      @media (max-width: 991px) {
+        //position: relative;
+        //width: 319px;
+        display: block;
+        //left: -20px;
+      }
+    }
+  }
+
+}
+
+.preview .container--dark {
+  border-radius: 5px 5px 5px 100px;
+  @media (max-width: 767px) {
+    overflow: hidden;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.preview-content {
+  background: @pr;
+  border-radius: 5px 5px 5px 100px;
+  padding: 50px;
+  padding-top: 40px;
+  position: relative;
+
+  @media (max-width: 767px) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    border-radius: 5px;
+
+  }
+}
+
+.preview-content__top {
+  .flex-block;
+  margin-bottom: 70px;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+}
+
+.preview-content__data {
+  display: flex;
+
+  p {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    white-space: nowrap;
+
+    @media (max-width: 374px) {
+      font-size: 14px;
+    }
+
+    span {
+      white-space: nowrap;
+    }
+  }
+
+  p + p {
+    margin-left: 40px;
+
+    @media (max-width: 374px) {
+      margin-left: 28px;
+    }
+  }
+
+  p:first-child {
+    position: relative;
+    padding-left: 34px;
+  }
+
+  p:first-child:before {
+    content: '';
+    width: 20px;
+    height: 21px;
+    background-image: url(../img/icons/calendar.png);
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -7px;
+    top: -2px;
+    @media (max-width: 1364px) {
+      left: 0;
+      top: 0;
+    }
+
+  }
+
+}
+
+.preview-content__title {
+  h1, .text-1 {
+    color: #fff;
+
+  }
+
+  .title-1 {
+    margin-bottom: 50px;
+    @media (max-width: 767px) {
+      margin-bottom: 33px;
+    }
+  }
+
+  .preview-subtitle {
+    @media (max-width: 1199px) {
+      max-width: 535px;
+    }
+    @media (max-width: 767px) {
+      max-width: 320px;
+    }
+  }
+}
+
+.preview-content__btn {
+  margin-top: 60px;
+  position: relative;
+  @media (max-width: 1199px) {
+    margin-top: 50px;
+  }
+}
+
+.preview-emoji {
+  position: absolute;
+  width: 300px;
+  right: -90px;
+  bottom: 0;
+  z-index: 2;
+  @media (max-width: 1364px) {
+    width: 140px;
+    right: -60px;
+    bottom: -22px;
+  }
+}
