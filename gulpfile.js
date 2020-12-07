@@ -64,7 +64,7 @@ gulp.task('copy:video', function () {
 		.pipe(browserSync.stream());
 });
 gulp.task('less', function () {
-	return gulp.src('./src/less/main.less')
+	return gulp.src('./src/less/style.less')
 		.pipe(plumber({
 			errorHandler: notify.onError(function (err) {
 				return {
