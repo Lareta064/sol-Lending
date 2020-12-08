@@ -1,120 +1,26 @@
-a(href="#!" data-toggle="modal" data-target="#modalForm").slim-button#floating-button Участвовать бесплатно
-section.preview
-    .container.container--dark
-        .preview-content#preview-content
-            .preview-content__top
-                +badge('Бесплатный вебинар')
-                .preview-content__data
-                    p
-                        span.visible-laptop 10 ноября 2020
-                        span.hide-laptop 10.11.2020
-                    p 19:30 &mdash; 21:00 мск
-            .preview-content__title
+section.header-banner
+    .container
+        .header-bubble.bubble-dark
+            .header-title__top
+                .badge-block
+                    +badge('Дистанционный курс')(class="badge--blue visible-desk")
+                    +badge('Онлайн курс')(class="badge--blue visible-mobile")
+                    .round-badge
+                        p 18+
+                .event-date
+                    p 5 января #[span.span-desk 2020] - 4 февраля 2021
+            .header-title__text
                 .title-1
-                    h1 Как говорить с&nbsp;ребёнком на&nbsp;непростые темы полового созревания
-                .preview-subtitle.text-1 Онлайн-ликбез для родителей о&nbsp;том, как правильно,<br class='visible-laptop'> честно и&nbsp;не&nbsp;стесняясь отвечать на&nbsp;вопросы детей «про это»
-                .preview-content__btn
-                    .preview-emoji
-                        img(src="img/emoji/4.png",  width="300" alt="emoji")
-                    a(href="#!" data-toggle="modal" data-target="#modalForm").big-button#participate Участвовать
-            //===== questions =====
-            section.questions-block
-                .questions-block__left
-                    .questions-block__row
-                        .questions-block__column
-                            +question('<span>Мам, а как я появился</span><span> на свет?</span>')
-                    .questions-block__row
-                        .questions-block__column
-                            +question('<span>Пап, а почему у мамы есть</span><span> грудь, а у тебя нет?</span>')
-                    .questions-block__row
-                        .questions-block__column
-                            +question('<span>Почему девочки писают</span><span> сидя?</span>')
-                    .questions-block__row
-                        .questions-block__column
-                            +question('<span>Как я смогла вылезти</span><span> из маминого живота?</span>')
-                    .questions-block__row
-                        .questions-block__column
-                            +question('<span>Чем занимаются эти дядя</span><span> с тетей в телевизоре?</span>')
-                        .questions-block__column-4
-                            p.text-3 Если не отвечать на подобные вопросы, ребенок поймет, что вы не готовы обсуждать с ним все «это». И тогда получать информацию он будет от друзей, на улице или в интернете
-                    .questions-block__row.top-0
-                        .questions-block__column
-                            +question('<span>Вы с папой тоже делаете</span><span> «это»?</span>')
-                    .questions-block__row
-                        .questions-block__column
-                            +question('<span>Почему эта собака залезла</span><span> на другую собаку?</span>')
-                .questions-block__right
-                    .questions-block__row
-                        .questions-block__column
-                            +question('Как-то раз к нам в гости пришел добрый волшебник<br> и принес очаровательного малыша. Это был ты')(class="question-item--right")
-                    .questions-block__row.block-reverse
-                        .questions-block__column-4
-                            p.text-3 Можно придумывать сказки про&nbsp;аистов и&nbsp;капусту или избегать ответа. Но лучше подготовиться и&nbsp;объяснить все как есть — это&nbsp;поможет уберечь ребенка от&nbsp;проблем в&nbsp;будущем
-                        .questions-block__column
-                            +question('<span>Тебе еще рано об этом</span><span> думать</span>')(class="question-item--right")
-
-                    .questions-block__row.top-0
-                        .questions-block__column
-                            +question('<span>Вот будешь взрослой — </span><span>все сама узнаешь</span>')(class="question-item--right")
-                    .questions-block__row.mt-0
-                        .emoji-group
-                            img(src="img/emoji/1.png", width="100" alt="emoji")
-                            img(src="img/emoji/2.png", width="100" alt="emoji")
-                            img(src="img/emoji/3.png", width="100" alt="emoji")
-
-            section.preview-info
-                .preview-info__head
-                    p.decor-text #[span.green-text Вебинар подойдет вам,] если вы уже слышали такие вопросы<br class="visible-laptop"> от своего ребенка и не знали,<br class="visible-laptop"> как на них отвечать
-                .row
-                    .col-md-6.col-xl-4
-                        .preview-info__column
-                            .preview-info__icon
-                                img(src="img/emoji/magic.png",width="88"  alt="emoji")
-                            .preview-info__text
-                                p.text-2 Если уходили от честного ответа, рассказывая про аиста,<br class="hide-tablet"> капусту или доброго волшебника
-                                p.text-2 Если переживаете,<br class='visible-mobile'> что в недалеком будущем услышите эти вопросы <br class="visible-laptop">снова<br class='visible-mobile'> или в первый раз
-                    .col-md-6.col-xl-4
-                        .preview-info__column
-                            .preview-info__icon
-                                img(src="img/emoji/woman.png", width="77" alt="emoji")
-                            .preview-info__text.pl-20
-                                p.text-2 Если думаете, что разговоры «про это» начинают вести только в подростковом возрасте
-                                p.text-2  Если испытывали дискомфорт: волновались и стеснялись, отвечая на вопросы «про это»
-                            .preview-info__text
-                    .col-md-6.col-xl-4.preview-column__flex
-                        .preview-info__column.pl-70
-                            p.text-100 73 #[sup %]
-                            p.text-bold женщин в России считают, что родителям сложно обсуждать половое созревание с детьми из-за стеснительности
-            section.contact-form
-                .contact-form-title
-                    .title-2.register-title
-                        h2 Примите&nbsp;участие<br> в бесплатном вебинаре
-                    .subtitle-text
-                        p.text-2 И получите в подарок два полезных чек-листа,<br> специально разработанных сексологом и психологом
-                    .form-footer
-                        .form-btn
-                            button.big-button(type="submit" data-toggle="modal" data-target="#modalForm" ) Участвовать
-                    .subtitle-img
-                        img(src="img/checklists/big.png" width='400').img-desk
-                        img(src="img/checklists/small.png" width='295').img-mob
-            section.preview-footer
-                .row
-                    .col-xl-5
-                        .preview-speaker__block
-                            .preview-speaker__photo
-                                img(src="img/images/avatar.png", width="200" alt="speaker")
-                            .preview-speaker__date
-                                p.text-1 Инна Сорока,
-                                p.text-2 клинический психолог, сексолог
-                                p.text-upper Спикер вебинара
-                    .col-xl-7.pl-100
-                        .preview-footer__column
-                            .footer__column-item
-                                p.text-100 10
-                                p.text-upper ноября 2020
-                            .footer__column-item
-                                p.text-100 19:30
-                                p.text-upper до 21:00 по мск
-                            .footer__column-item
-                                p.text-100.text-green 0&#8381;
-                                p.text-upper стоимость
+                    h1 Взрослый разговор о&nbsp;половом воспитании
+                .header-title__subtitle.text-1 Онлайн-курс для родителей и&nbsp;педагогов <br class="visible-desk"> от четырех профессиональных психологов и&nbsp;врачей
+                
+                
+        .header-banner__footer
+            .header-banner__emoji
+                img(src="img/emoji/4.png",  width="300" alt="emoji")
+            a(href="#!").button.big-button.visible-desk Посмотреть программу курса
+            a(href="#!").button.big-button.visible-mobile Программа курса
+            a(href="#!").light-link
+                span
+                    +playIcon
+                span  Видео-презентация
