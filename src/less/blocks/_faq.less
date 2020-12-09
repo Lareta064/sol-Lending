@@ -5,12 +5,14 @@
     overflow: hidden;
   }
 
+  .faq-content {
     .title-2 h2 {
       margin-bottom: 80px;
       @media (max-width: 767px) {
         margin-bottom: 50px;
       }
     }
+  }
 
   .double-block__row {
     display: flex;
@@ -34,15 +36,22 @@
     padding-bottom: 40px;
     padding-left: 30px;
 
-    .text-block h4{
+    .text-block h4 {
       margin-bottom: 14px;
     }
 
-    p.text-3{
+    p.text-3 {
       margin-bottom: 14px;
-      @media(max-width: 767px){
+      @media (max-width: 767px) {
         margin-bottom: 20px;
       }
+    }
+  }
+
+  .text-block--flex {
+    display: flex;
+    @media (max-width: 767px) {
+      display: block;
     }
   }
 
@@ -210,6 +219,7 @@
     position: relative;
     //overflow: hidden;
     padding-bottom: 145px;
+    margin-bottom: 145px;
 
     @media (max-width: 1199px) {
       padding-bottom: 198px;
@@ -378,6 +388,17 @@
           }
         }
       }
+    }
+  }
+
+  .bubble-block {
+    padding-right: 70px;
+    padding-bottom: 54px;
+    .title-2 h2 {
+      color: #FFFFFF;
+      font-weight: normal;
+      line-height: 1.17;
+      margin-bottom: 0;
     }
   }
 }
