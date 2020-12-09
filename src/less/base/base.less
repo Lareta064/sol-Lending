@@ -210,7 +210,7 @@ button {
 .decor-text,
 .title-2 h2 {
   font-size: 60px;
-  line-height: 1.17;
+  line-height: 1.23;
   @media (max-width: 1364px) {
     font-size: 50px;
 
@@ -224,7 +224,9 @@ button {
     line-height: 44px;
   }
 }
-
+.decor-text{
+  line-height: 1.28;
+}
 
 .title-3 h3 {
   font-size: 28px;
@@ -380,12 +382,12 @@ h4 {
     margin-left: 65px;
     width: 54px;
     height: 54px;
-    border: 1px solid #E5E5E5;
-    border: 1px solid @pr;
+    // border: 1px solid #E5E5E5;
+    // border: 1px solid @pr;
 
     position: relative;
     border-radius: 5px;
-    // background-color: #E5E5E5;
+    background-color: #E5E5E5;
   }
 }
 
@@ -397,6 +399,7 @@ h4 {
   height: 2px;
 
   background-color: @pr;
+  opacity: .3;
 
   -webkit-transition: .3s;
   -o-transition: .3s;
@@ -409,7 +412,7 @@ h4 {
   position: absolute;
   left: 0;
   height: 2px;
-
+  
   background-color: @pr;
   right: 0;
   -webkit-transition: .3s;
@@ -461,7 +464,7 @@ h4 {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 15.5%;
+    left: 15%;
     transform: translateY(50%);
     width: 0;
     height: 0;
@@ -469,6 +472,12 @@ h4 {
     border-right: 0;
     border-top-color: transparent;
     border-bottom-color: transparent;
+  }
+  @media(max-width:767px){
+    border-radius: 20px;
+    &:after{
+      border-width:40px;
+    }
   }
 }
 
@@ -481,11 +490,19 @@ h4 {
   padding-bottom: 36px;
   padding-left: 50px;
   padding-right: 60px;
+  font-family: @rr;
+  @media(max-width:767px){
+    padding-top: 10px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+  }
   &:after{
     content: '';
     position: absolute;
     bottom: 0;
-    left: 15.5%;
+    left: 15%;
     transform: translateY(50%);
     width: 0;
     height: 0;
@@ -494,6 +511,9 @@ h4 {
     border-top-color: transparent;
     border-bottom-color: transparent;
     z-index: 1;
+    @media(max-width:767px){
+      border-width:20px;
+    }
   }
   p{
     position: relative;
@@ -501,6 +521,10 @@ h4 {
     font-size: 28px;
     line-height: 40px;
     color: #fff;
+    @media(max-width:767px){
+      font-size: 20px;
+      line-height: 1.4;
+    }
   }
 }
 .bubble-block.tail-right{
@@ -511,7 +535,7 @@ h4 {
     content: '';
     position: absolute;
     bottom: 0;
-    right: 15.5%;
+    right: 8.5%;
     transform: translateY(50%);
     width: 0;
     height: 0;
@@ -520,5 +544,8 @@ h4 {
     border-top-color: transparent;
     border-bottom-color: transparent;
     z-index: 1;
+    @media(max-width:767px){
+      border-width:20px;
+    }
   }
 }

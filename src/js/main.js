@@ -6,74 +6,45 @@ $(document).ready(function () {
 	const overlayBlock = document.querySelector('#overlay');
 	const mobHeader = document.querySelector('.header');
 	
-	if (menuToggle) {
-		menuToggle.addEventListener('click', function () {
-			if (this.classList.contains('active')) {
-				this.classList.remove('active');
-				mobMenu.classList.remove('active');
-				overlayBlock.classList.remove('active');
-				bodyEl.classList.remove('noscroll');
-				mobHeader.classList.remove('active');
+	// if (menuToggle) {
+	// 	menuToggle.addEventListener('click', function () {
+	// 		if (this.classList.contains('active')) {
+	// 			this.classList.remove('active');
+	// 			mobMenu.classList.remove('active');
+	// 			overlayBlock.classList.remove('active');
+	// 			bodyEl.classList.remove('noscroll');
+	// 			mobHeader.classList.remove('active');
 
-			} else {
-				this.classList.add('active');
-				mobMenu.classList.add('active');
-				overlayBlock.classList.add('active');
-				mobHeader.classList.add('active');
-				bodyEl.classList.add('noscroll');
+	// 		} else {
+	// 			this.classList.add('active');
+	// 			mobMenu.classList.add('active');
+	// 			overlayBlock.classList.add('active');
+	// 			mobHeader.classList.add('active');
+	// 			bodyEl.classList.add('noscroll');
 
-			}
-		});
-		window.addEventListener('resize', function () {
-			menuToggle.classList.remove('active');
-			overlayBlock.classList.remove('active');
-			bodyEl.classList.remove('noscroll');
-			mobMenu.classList.remove('active');
-			mobHeader.classList.remove('active');
+	// 		}
+	// 	});
+	// 	window.addEventListener('resize', function () {
+	// 		menuToggle.classList.remove('active');
+	// 		overlayBlock.classList.remove('active');
+	// 		bodyEl.classList.remove('noscroll');
+	// 		mobMenu.classList.remove('active');
+	// 		mobHeader.classList.remove('active');
 
-		});
-		mobMenu.addEventListener('click', function () {
-			this.classList.remove('active');
-			menuToggle.classList.remove('active');
-			overlayBlock.classList.remove('active');
-			mobHeader.classList.remove('active');
-			bodyEl.classList.remove('noscroll');
+	// 	});
+	// 	mobMenu.addEventListener('click', function () {
+	// 		this.classList.remove('active');
+	// 		menuToggle.classList.remove('active');
+	// 		overlayBlock.classList.remove('active');
+	// 		mobHeader.classList.remove('active');
+	// 		bodyEl.classList.remove('noscroll');
 
-		})
-	}
-
-
-
-   const previewBlock = document.getElementById('preview-content');
-   const floatBtn = document.getElementById('floating-button');
-  
-	// Определить праую координату плавающей кнопки
-   if(previewBlock){
-	   let floatBtnRightPosition = +((window.innerWidth - previewBlock.offsetWidth) / 2 -20);
-	   floatBtn.style.right = floatBtnRightPosition +'px';
-
-   }
-
-   var sbTopPos = $("#participate").offset().top;
-   var sbHeight = $("#participate").outerHeight();
-   var ffTopPos = $("#contact-form").offset().top;
-	$(window).scroll(function(){		
-		if(
-			($(window).scrollTop() >= sbTopPos+sbHeight)&&
-			($(window).scrollTop()+$(window).height() <= ffTopPos)
-			){
-			if(floatBtn.classList.contains("active"))
-				return;
-			floatBtn.classList.add('active'); 
-			let floatBtnRightPosition = +((window.innerWidth - previewBlock.offsetWidth) / 2 -20);
-			floatBtn.style.right = floatBtnRightPosition +'px';
-		}else{
-			//hide button
-			floatBtn.classList.remove('active'); 
-		}
-	});
+	// 	})
+	// }
 
 
+
+   
 	//  show Reviews
 	const reviewContent = document.getElementById('review-content');  
 	const btnShowReviewContent = document.getElementById('showReview'); 
@@ -102,16 +73,19 @@ $(document).ready(function () {
 			item.addEventListener('click', function () {
 				
 			const videoBtn = item.querySelector('.btn-play');
+			const bubbleBlock = item.querySelector('.bubble-block');
 			const videoClip = item.querySelector('video');			
 			
 				if (videoClip.paused) {
 					stopAllVideos();
 					videoClip.play();
 					videoBtn.style.opacity = "0";
+					bubbleBlock.style.opacity = "0";
 					
 				} else {
 					videoClip.pause();
 					videoBtn.style.opacity = "1";
+					bubbleBlock.style.opacity = "1";
 					
 				}
 				
@@ -119,6 +93,7 @@ $(document).ready(function () {
 			videoClip.addEventListener("ended", function () {
 				videoClip.pause();
 				videoBtn.style.opacity = "1";
+				bubbleBlock.style.opacity = "1";
 			});	
 		});
 		}

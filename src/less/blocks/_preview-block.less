@@ -1,5 +1,5 @@
 .header-banner {
-  margin-top: 64px;
+  margin-top: 57px;
   .container{
     @media(max-width:579px){
       padding-left: 10px;
@@ -14,7 +14,7 @@
     margin-top: 34px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 40px;
+    padding-top: 38px;
     padding-bottom: 70px;
   }
   @media (max-width: 991px) {
@@ -28,6 +28,7 @@
     padding-right: 20px;
     padding-top: 30px;
     padding-bottom: 70px;
+    border-radius: 20px;
   
   }
   }
@@ -151,10 +152,8 @@
     font-weight: 700;
     white-space: nowrap;
     position: relative;
-    padding-left: 34px;
-    @media(max-width:991px){
-      margin-top: 24px;
-    }
+    padding-left: 30px;
+    
     @media (max-width: 374px) {
       font-size: 14px;
     }
@@ -212,7 +211,7 @@
 .light-link{
   
 font-size: 24px;
-padding-left: 10px;
+padding-left: 8px;
 padding-right: 10px;
 font-family: @rr;
 color: #2F80ED;
@@ -221,10 +220,23 @@ align-items: center;
 span + span{
   margin-left: 14px;
 }
+span:first-child{
+  position: relative;
+  top: 4px;
+}
 span:last-child{
-  padding-bottom: 5px;
+  position: relative;
   white-space: nowrap;
-  border-bottom: 1px dashed  rgba(47, 128, 237, .2);
+  
+  &:after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    border-bottom:1px dashed rgba(47, 128, 237, .2);
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+  }
 }
 }
 .header-banner__footer{
@@ -238,14 +250,20 @@ span:last-child{
   }
   .light-link{
     margin-left: 48px;
+    position: relative;
     @media(max-width:991px){
       margin-top: 30px;
       margin-left: 0;
       text-align: center;
     }
   }
+  
   .button.big-button{
+    padding-left: 50px;
+    padding-right: 50px;
     @media(max-width:767px){
+      padding-left: 10px;
+      padding-right: 10px;
       width: 100%;
       max-width: 335px;
       text-align: center;
@@ -255,22 +273,29 @@ span:last-child{
 .header-banner__emoji {
   position: absolute;
   width: 300px;
-  right: 0px;
+  height: 300px;
+  right: 50px;
   bottom: 0;
   z-index: 2;
   @media (max-width: 1364px) {
-    width: 240px;
+    width: 200px;
+    height: 200px;
     right: 20px;
-    bottom:32px;
+    bottom:80px;
   }
   @media (max-width: 1199px) {
-    bottom:32px;
+    bottom:80px;
    
     
   }
   @media (max-width: 991px) {
-    bottom:160px;
+    bottom:185px;
     width: 140px;
+    height: 140px;
+  }
+  @media (max-width: 991px) {
+    height: 100px;
+    width: 100px;
     
   }
 }
