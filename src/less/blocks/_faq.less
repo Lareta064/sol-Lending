@@ -5,6 +5,13 @@
     overflow: hidden;
   }
 
+  .container {
+    @media (max-width: 579px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
   .faq-content {
     .title-2 h2 {
       margin-bottom: 80px;
@@ -26,7 +33,7 @@
   .first-block {
     width: 49%;
     max-width: 620px;
-    @media(max-width: 767px){
+    @media (max-width: 767px) {
       width: 100%;
     }
   }
@@ -39,7 +46,7 @@
     padding-right: 30px;
     padding-bottom: 40px;
     padding-left: 30px;
-    @media(max-width: 767px){
+    @media (max-width: 767px) {
       margin-bottom: 30px;
       padding-right: 20px;
       padding-left: 20px;
@@ -67,7 +74,7 @@
 
     .badge {
       background-color: @blue;
-      @media(max-width: 767px){
+      @media (max-width: 767px) {
         margin-top: 20px;
       }
     }
@@ -416,22 +423,22 @@
       margin-bottom: 50px;
     }
 
-      &:after{
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 5%;
-        -webkit-transform: translateY(50%);
-        -ms-transform: translateY(50%);
-        transform: translateY(50%);
-        width: 0;
-        height: 0;
-        border: 40px solid #2F80ED;
-        border-right: 0;
-        border-top-color: transparent;
-        border-bottom-color: transparent;
-        z-index: 1;
-      }
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+      -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      transform: translateY(50%);
+      width: 0;
+      height: 0;
+      border: 40px solid #2F80ED;
+      border-right: 0;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      z-index: 1;
+    }
 
     .title-2 h2 {
       color: #FFFFFF;
