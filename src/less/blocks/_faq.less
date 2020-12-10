@@ -165,8 +165,9 @@
 
     @media (max-width: 767px) {
       width: 100%;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     .badge {
@@ -176,6 +177,7 @@
       color: #000000;
 
       @media (max-width: 424px) {
+        top: 25px;
         left: 20px;
         margin-bottom: 0;
         z-index: 1;
@@ -185,24 +187,33 @@
     .img-block {
       width: 620px;
 
-      @media (max-width: 991px) {
-        position: relative;
-        width: 596px;
-        left: -144px;
+      @media (max-width: 767px){
+        //position: relative;
+        width: auto;
+        height: 335px;
+        margin-bottom: 50px;
+        //top: -58px;
+        //left: -37px;
       }
 
-      @media (max-width: 424px) {
-        width: 463px;
-        //right: 113px;
-        top: -43px;
-        left: -72px;
-      }
-
-      @media (max-width: 374px) {
-        width: 434px;
-        right: 95px;
-        top: 8px;
-      }
+      //@media (max-width: 991px) {
+      //  position: relative;
+      //  width: 596px;
+      //  left: -144px;
+      //}
+      //
+      //@media (max-width: 424px) {
+      //  width: 463px;
+      //  //right: 113px;
+      //  top: -43px;
+      //  left: -72px;
+      //}
+      //
+      //@media (max-width: 374px) {
+      //  width: 434px;
+      //  right: 95px;
+      //  top: 8px;
+      //}
     }
 
     .text-block {
@@ -210,7 +221,8 @@
       padding-left: 30px;
       padding-top: 10px;
       @media (max-width: 767px) {
-        padding-right: 0;
+        padding-right: 20px;
+        padding-left: 20px;
       }
 
       p.text-3 {
