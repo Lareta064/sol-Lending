@@ -12,6 +12,7 @@
     }
   }
 
+
   .faq-content {
     .title-2 h2 {
       margin-bottom: 80px;
@@ -478,6 +479,10 @@
 
   .faq-footer {
     display: flex;
+
+    @media(max-width: 767px){
+      flex-direction: column;
+    }
 
     .text-block {
       width: 70%;
