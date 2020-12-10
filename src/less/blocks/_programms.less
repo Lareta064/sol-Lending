@@ -55,6 +55,7 @@
 
   
 }
+.programms-theme__bottom,
 .programms-theme__top{
   padding-left: 50px;
   padding-right: 50px;
@@ -310,4 +311,103 @@ padding-right: 10px;
   font-family: @rb;
   color: #fff;
  
+}
+.programms-theme__bottom{
+  margin-top: 140px;
+}
+.programm-lesson--5 {
+  h5{
+    margin-top: 0;
+    @media(max-width:1364px){
+      margin-top: 12px;
+    }
+  }
+  .badge{
+    top: -44px;
+    @media(max-width:1364px){
+      position: relative;
+      top: 0;
+    }
+  }
+.info-row__column--350{
+  @media(max-width:1364px){
+    margin-top: 50px;
+  }
+}
+}
+.programms-theme__footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+.programms-theme__label-box{
+  max-width:285px;
+  .text-100{
+    color: @green;
+    position: relative;
+    width:fit-content;
+    margin-bottom: 20px;
+    .round-badge{
+      font-size: 20px;
+      height: 36px;
+      line-height: 36px;
+      color: #fff;
+      width: 51px;
+      text-align: center;
+      background-color: @blue;
+      position: absolute;
+      top: 0;
+      right: -50px;
+      font-family: @rb;
+    }
+  }
+  .text-3{
+    line-height: 24px;
+  }
+}
+.programm-lesson--gradient{
+  position: relative;
+  &:after{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    background-color:  rgba(196, 196, 196, 0);
+    background: linear-gradient(180deg, rgba(17, 17, 21, 0) 0%, #252A34 100%);
+  }
+}
+.programm-lesson--gradient.active{
+  &:after{
+    display: none;
+  }
+}
+.programm-hide-block{
+  height: 0;
+  overflow: hidden;
+  transition: .3s;
+}
+.programm-hide-block.active{
+  height: 300px;
+}
+.programm-lesson.pt-80{
+  padding-top: 80px;
+}
+.programm-warning{
+  margin-top: 240px;
+  .text-2{
+    margin-top: 30px;
+  }
+  .bg-word{
+    display: inline-block;
+    background-color: @orange;
+    color: #fff;
+    border-radius: 50px;
+    height: 90px;
+    width: 90px;
+    text-align: center;
+  }
 }
