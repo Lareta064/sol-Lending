@@ -75,8 +75,8 @@
   border-radius: 20px;
 
   @media (max-width: 991px) {
-    padding-bottom: 36px;
-    border-radius: 5px;
+    padding-bottom: 100px;
+    border-radius: 3px;
     padding-top: 45px;
   }
 
@@ -155,7 +155,7 @@
   }
 }
 .info-row__column--350 {
-  min-width: 27%;
+  min-width: 29%;
   max-width: 350px;
   @media (max-width: 1364px) {
     min-width: unset;
@@ -373,18 +373,30 @@ padding-right: 10px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-top: -20px;
+  position: relative;
+  z-index: 3;
   @media(max-width:991px){
     display: block;
     padding-top: 60px;
+    margin-top: 0;
   }
 
 }
 .programms-theme__footer .button{
   white-space: nowrap;
+  padding-left: 50px;
+  padding-right: 50px;
   @media(max-width:1199px){
+
    padding-left: 34px;
    padding-right: 34px;
   }
+  @media(max-width:374px){
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px; 
+   }
 }
 .programms-theme__footer .button span{
   display: inline;
@@ -445,14 +457,10 @@ padding-right: 10px;
   }
 }
 .programm-hide-block{
-  // height: 0;
-  // overflow: hidden;
-  // transition: .3s;
+  
   display: none;
 }
-// .programm-hide-block.active{
-//   height: 300px;
-// }
+
 .programm-lesson.pt-80{
   padding-top: 80px;
 }
@@ -463,15 +471,22 @@ padding-right: 10px;
   }
   .bg-word{
     display: inline-block;
-    background-color: @orange;
     color: #fff;
-    border-radius: 50px;
     height: 90px;
     width: 90px;
+    position: relative;
+    border-radius: 50%;
+    background-color: @orange;
     text-align: center;
+    span{
+      position: relative;
+       z-index: 2;
+    }
     @media(max-width:767px){
       width: 50px;
       height: 50px;
     }
+   
   }
+  
 }
