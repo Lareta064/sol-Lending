@@ -98,15 +98,6 @@ $(document).ready(function () {
 		});
 		}
 	}
-	/* show hide programm block*/
-	let btnShowProgramm = document.querySelector('#showProgramm');
-	let hideProgramm = document.querySelector('#programmHide');
-	let gradientBlock = document.querySelector('.programm-lesson--gradient');
-	if(btnShowProgramm){
-		btnShowProgramm.addEventListener('click', function(){
-			hideProgramm.classList.add('active');
-			gradientBlock.classList.add('active');
-		})
-	}
+	
 
 })

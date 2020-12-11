@@ -11,14 +11,26 @@
   padding-left: 24px;
   padding-right: 24px;
   border-radius: 24px;
+  @media(max-width:767px){
+     font-size: 16px!important;
+     height: 36px;
+     line-height: 36px; 
+     padding-left: 18px;
+     padding-right: 18px;
+  }
 }
+				
 .programms-theme__subhead {
   padding-top: 80px;
+  @media(max-width:767px){
+    padding-top: 49px;
+  }
   .badge-round{
     background-color: #2F80ED;
     font-size: 20px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+  
   }
   h2{
     color: #fff;
@@ -26,6 +38,10 @@
     line-height: 1.25;
     font-family: @cm;
     margin-top: 14px;
+    @media(max-width:767px){
+      font-size: 28px;
+      line-height: 34px;
+    }
   }
 }
 .programms-theme__head {
@@ -40,7 +56,17 @@
     padding-bottom: 12px;
   }
 }
-
+.programms-theme__head{
+  
+  @media(max-width:767px){
+     padding-bottom: 0px;
+    h2{
+     line-height: 1;
+    
+   }
+ } 
+}
+	
 .programms-theme__content {
   padding-top: 40px;
   
@@ -51,6 +77,7 @@
   @media (max-width: 991px) {
     padding-bottom: 36px;
     border-radius: 5px;
+    padding-top: 45px;
   }
 
   
@@ -60,8 +87,8 @@
   padding-left: 50px;
   padding-right: 50px;
   @media (max-width: 424px) {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 23px;
+    padding-right: 16px;
   }
 }
 .programms-theme__content {
@@ -77,6 +104,9 @@
 }
 .programms-theme__text{
   margin-top: 60px;
+  @media(max-width:767px){
+    margin-top: 81px;
+  }
 }
 .info-row {
   display: flex;
@@ -88,7 +118,7 @@
 .programm-lesson + .programm-lesson {
     margin-top: 80px;
     @media (max-width: 991px) {
-      margin-top: 100px;
+      margin-top: 103px;
     }
 }
 
@@ -101,7 +131,7 @@
     margin-bottom: 14px;
     max-width:790px;
     @media (max-width: 767px) {
-      margin-bottom: 20px;
+      margin-bottom: 12px;
     }
   }
 }
@@ -131,6 +161,7 @@
     min-width: unset;
     width: 100%;
     max-width:850px;
+    margin-top: 50px;
    }  
 }
 .info-row__column{
@@ -212,7 +243,7 @@ text-transform: uppercase;
   &::-webkit-scrollbar { width: 0; }
   }
   @media(max-width:767px){
-   padding-left: 10px;
+   padding-left: 13px;
    
   }
   
@@ -314,6 +345,9 @@ padding-right: 10px;
 }
 .programms-theme__bottom{
   margin-top: 140px;
+  @media(max-width: 767px){
+    margin-top: 127px;
+  }
 }
 .programm-lesson--5 {
   h5{
@@ -339,10 +373,35 @@ padding-right: 10px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  @media(max-width:991px){
+    display: block;
+    padding-top: 60px;
+  }
 
+}
+.programms-theme__footer .button{
+  white-space: nowrap;
+  @media(max-width:1199px){
+   padding-left: 34px;
+   padding-right: 34px;
+  }
+}
+.programms-theme__footer .button span{
+  display: inline;
+  @media(max-width:1199px){
+    display: none;
+  }
+}
+.programms-theme__label{
+  @media(max-width:767px){
+    margin-top: 80px;
+  }
 }
 .programms-theme__label-box{
   max-width:285px;
+  @media(min-width:992px) and (max-width:1364px){
+    margin-left: auto;
+  }
   .text-100{
     color: @green;
     position: relative;
@@ -358,7 +417,7 @@ padding-right: 10px;
       background-color: @blue;
       position: absolute;
       top: 0;
-      right: -50px;
+      right: -64px;
       font-family: @rb;
     }
   }
@@ -386,13 +445,14 @@ padding-right: 10px;
   }
 }
 .programm-hide-block{
-  height: 0;
-  overflow: hidden;
-  transition: .3s;
+  // height: 0;
+  // overflow: hidden;
+  // transition: .3s;
+  display: none;
 }
-.programm-hide-block.active{
-  height: 300px;
-}
+// .programm-hide-block.active{
+//   height: 300px;
+// }
 .programm-lesson.pt-80{
   padding-top: 80px;
 }
@@ -409,5 +469,9 @@ padding-right: 10px;
     height: 90px;
     width: 90px;
     text-align: center;
+    @media(max-width:767px){
+      width: 50px;
+      height: 50px;
+    }
   }
 }
