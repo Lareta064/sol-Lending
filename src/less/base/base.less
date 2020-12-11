@@ -547,3 +547,28 @@ h4 {
     }
   }
 }
+
+.bubble-grey{
+  background-color: #363E4D;
+  border-radius: 50px 50px 10px 50px;
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    transform: translateY(50%);
+    width: 0;
+    height: 0;
+    border: 50px solid #363E4D;
+    border-right: 0;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+  }
+  //@media(max-width:767px){
+  //  border-radius: 20px;
+  //  &:after{
+  //    border-width:40px;
+  //  }
+  //}
+}
