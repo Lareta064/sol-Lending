@@ -1,9 +1,25 @@
+.experts{
+	margin-top: 240px;
+}
 .experts .container{
 	@media(max-width:767px){
 		padding-left: 10px;
 		padding-right: 10px;
 	}
 }
+.experts-wrapper{
+	margin-top: 60px;
+	.bubble-block{
+		max-width:1120px;
+		padding: 30px 60px 34px 50px;
+		position: relative;
+		top: 20px;
+		&:after{
+			left: 4%;
+		}
+	}
+}
+				
 .expert-block{
 	display: flex;
 	justify-content: space-between;
@@ -11,6 +27,12 @@
 		flex-direction: column;
 	}
 }
+.expert-block.expert-block--end{
+	@media(min-width: 1200px){
+		align-items: flex-end;
+	}
+}
+
 .expert-block.expert-block--reverce{
 	@media(max-width:991px){
 		flex-direction: column-reverse;
