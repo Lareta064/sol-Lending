@@ -1,3 +1,6 @@
+.bonus{
+	background: #F4E3E0;
+}
 .bonus-content{
 	background: #F4E3E0;
 border-radius: 20px 20px 20px 100px;
@@ -6,6 +9,11 @@ padding-top: 40px;
 padding-left: 50px;
 padding-right: 0;
 display: flex;
+@media(max-width: 767px){
+	flex-direction: column;
+	padding-left: 0;
+	padding-right: 0;
+}
 .title-2 h2{
 	line-height: 1.18;
 	span{
@@ -24,24 +32,38 @@ display: flex;
 }
 .bonus-content__text{
 	width: 57.3%;
+	@media(max-width: 767px){
+		width: 100%;
+	}
 }
 .bonus-content__list ul{
 	margin-top: 45px;
+	@media(max-width: 767px){
+		margin-left: 20px;
+	}
 	li{
 		display: flex;
 		align-items: flex-start;
 		color: #252A34;
+		
 		span.number{
 			font-size: 24px;
 			line-height: 30px;
 			color: #252A34;
 			font-family: @rb;
 			margin-right: 36px;
+			@media(max-width: 767px){
+				font-size: 20px;
+				margin-right: 13px;
+			}
 		}
 		a.text-link{
 			font-size: 24px;
 			color: #2F80ED;
 			padding-bottom: 10px;
+			@media(max-width: 767px){
+				font-size: 20px;
+			}
 		}
 	}
 	li +li{
@@ -60,6 +82,12 @@ display: flex;
 		padding-right: 60px;
 		font-family: @rr;
 		margin-top: 24px;
+		@media(max-width: 767px){
+			height: 64px;
+			padding-left: 30px;
+			padding-right: 30px;
+			line-height: 64px;
+		}
 	}
 }
 .bonus-content__list .bonus-condition{
@@ -67,9 +95,13 @@ display: flex;
 		font-size: 24px;
 		line-height: 30px;
 		font-family: @rr;
+		@media(max-width: 767px){
+			font-size: 20px;
+		}
 	}
 	.text-discount{
-		font-size: 20px;margin-top: 14px;
+		font-size: 20px;
+		margin-top: 14px;
 		letter-spacing: 0.01em;
 		.base-discount{
 			font-size: 14px;
@@ -86,7 +118,6 @@ display: flex;
 			text-transform: uppercase;
 			font-family: @cm;
 			font-weight: 700;
-
 			
 		}
 	}
@@ -97,6 +128,14 @@ display: flex;
 }
 .bonus-content__img{
 	position: relative;
+	@media(max-width:767px){
+		margin-top: 100px;
+		height: 325px;
+		overflow: hidden;
+		max-width:345px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.block-social__icon--inst{
 		width: 120px;
 	height: 120px;
@@ -111,7 +150,10 @@ display: flex;
 	z-index: 2;
 	transform: translate(-50%,-46%) rotate(-15deg);
     left: 0;
-    top: 37%;
+	top: 37%;
+	@media(max-width:767px){
+		display: none;
+	}
 	}
 }
 .warning--3{
