@@ -383,9 +383,14 @@ p.text-40.mb-120{
 	left: 20px;
 	bottom: -100px;
 	z-index: 5;
-	@media(max-width:991px){
+	@media(max-width:1364px){
+		
+		bottom: -50px;}
+	@media(max-width:1199px){
 		left: 11px;
-		bottom: -50px;
+		bottom: -50px;}
+	@media(max-width:991px){
+		
 		&.b-0{
 			bottom: -70px;
 		}
@@ -487,13 +492,17 @@ p.text-40.mb-120{
 		right: 0;
 		top: 0;
 		transform: translateX(90%);
-		
 		@media(max-width:1199px){
-			transform: translate(26%, -100%);
-    		top: -30px;
-    		right: -46px;
+			transform: translate(70%, -100%);
+    		top: 0px;
+    		right: 20px;
 		}
 		@media(max-width:991px){
+			transform: translate(100%, 0%);
+    		top: 0px;
+    		right: 20px;
+		}
+		@media(max-width:767px){
 			transform: translate(0%, -100%);
     		top: -30px;
     		right: -46px;
