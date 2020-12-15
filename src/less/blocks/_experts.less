@@ -315,3 +315,25 @@ p.text-40.mb-120{
 .expert-col--620.pt-0{
 	padding-top: 0;
 }
+.expert-wrapper	{
+	position: relative;
+	width: 300px;
+	.bubble-block{
+		padding: 14px 16px 20px 24px;
+		border-radius: 24px;
+		max-width: 314px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transform: translateX(90%);
+		&:after{
+			border-width: 20px;
+		}
+		p{
+			font-size: 18px;
+			line-height: 24px;
+			font-family: @rr;
+		}
+	}
+}
+							
