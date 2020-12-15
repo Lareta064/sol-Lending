@@ -246,6 +246,10 @@ h4 {
   font-family: @rr;
 }
 
+.text-3.bold{
+  font-weight: 700;
+}
+
 .text-4 {
   font-size: 16px;
   line-height: 1.83;
@@ -264,6 +268,11 @@ h4 {
   line-height: 20px;
   letter-spacing: 0.05em;
   font-weight: bold;
+}
+
+.text-80{
+  font-size: 80px;
+  line-height: 0.8;
 }
 
 .text-100 {
@@ -324,6 +333,9 @@ h4 {
 }
 .badge.badge--blue {
   background-color: #2F80ED;
+}
+.badge.badge-dark{
+  background-color: @fg;
 }
 .text-link {
   color: @pr;
@@ -535,6 +547,9 @@ h4 {
   border-radius: 50px 50px 10px 50px;
   position: relative;
   font-family: @rr;
+  @media(max-width: 767px){
+    border-radius: 20px 20px 0 20px;
+  }
   &:after{
     display: none;
   }
@@ -561,11 +576,10 @@ h4 {
   background-color: #EE7550;
   border-radius: 50px;
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 24px;
-  padding-left: 40px;
-  padding-right: 50px;
   font-family: @rr;
+  @media(max-width: 767px){
+    border-radius: 20px;
+  }
   &:after{
     display: none;
   }
