@@ -40,23 +40,25 @@
     }
   }
 
-  .price-card__info{
-    width: 31%;
-    max-width: 400px;
+  .price-card__info.flex-block{
     flex-direction: column;
-
-    .badge--blue{
-      border-radius: 3px;
-      margin-left: 10px;
-    }
-
-    .block-column + .block-column{
-      margin-bottom: 92px;
-    }
 
     p.text-3{
       margin-top: 14px;
     }
+  }
+
+  .block-column {
+    margin-top: 26px;
+  }
+
+  .block-column + .block-column{
+    margin-bottom: 92px;
+  }
+
+  .price-card__info{
+    width: 31%;
+    max-width: 400px;
   }
 
   .header-group {
@@ -88,6 +90,7 @@
 
   .subheader-bg{
     background-color: #363E4D;
+    margin-top: 40px;
     padding-top: 20px;
     padding-right: 40px;
     padding-bottom: 38px;
@@ -152,6 +155,10 @@
 
   .tariff-item.flex-block{
     align-items: unset;
+  }
+
+  .badge-dark, .badge--blue{
+    border-radius: 3px;
   }
 
 }
