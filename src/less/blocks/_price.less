@@ -4,6 +4,13 @@
     margin-top: 140px;
   }
 
+  .container {
+    @media (max-width: 579px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
   p.text-4 {
     line-height: 1.37;
   }
@@ -82,6 +89,10 @@
   .price-card__info {
     width: 31%;
     max-width: 400px;
+    
+    @media(max-width: 767px){
+      width: 100%;
+    }
   }
 
   .color-block {
