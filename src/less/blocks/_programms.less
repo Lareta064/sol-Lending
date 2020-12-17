@@ -290,6 +290,10 @@ text-transform: uppercase;
       margin-bottom: 57px;
     }
   }
+  .programm-block__bottom p {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .programm-swipe__block.swipe-block--green{
   background: #6EB883;
@@ -330,10 +334,12 @@ padding-right: 10px;
 .programm-block__bottom{
    position: absolute;
   left: 30px;
+  right: 30px;
   bottom: 50px;
   @media(max-width:767px){
     left: 20px;
     bottom: 40px;
+    right: 20px;
   }
 }
 .programm-block__bottom p{
