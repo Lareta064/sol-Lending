@@ -159,11 +159,17 @@
     margin-bottom: 14px;
 
     @media(max-width: 767px){
-      display: block;
+      flex-direction: column-reverse;
+      align-items: flex-start;
     }
 
     .badge.round-badge {
       margin-left: 20px;
+
+      @media(max-width: 767px){
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
     }
   }
 
