@@ -40,6 +40,13 @@
     padding-bottom: 62px;
     padding-left: 30px;
 
+    @media(max-width: 767px){
+      width: 100%;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
     .title-3 h3 {
       color: #FFFFFF;
     }
@@ -140,6 +147,10 @@
     display: flex;
     margin-bottom: 14px;
 
+    @media(max-width: 767px){
+      display: block;
+    }
+
     .badge.round-badge {
       margin-left: 20px;
     }
@@ -151,6 +162,10 @@
 
     .img-block {
       margin-left: 10px;
+
+      @media(max-width: 767px){
+        display: none;
+      }
     }
   }
 
@@ -215,6 +230,10 @@
 
   .footer-group {
     margin-top: 50px;
+    @media(max-width: 767px){
+      display: block;
+      margin-top: 60px;
+    }
 
     .big-button {
       padding-left: 50px;
@@ -229,6 +248,10 @@
   .footer-subtitle {
     margin-top: -13px;
 
+    @media(max-width: 767px){
+      margin-top: 20px;
+    }
+
     p.text-4 {
       color: rgba(255, 255, 255, 0.5);
     }
@@ -236,6 +259,10 @@
 
   .tariff-item.flex-block {
     align-items: unset;
+    
+    @media(max-width: 767px){
+      display: block;
+    }
   }
 
 }
