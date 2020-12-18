@@ -95,15 +95,18 @@ button {
     padding-right: 20px;
   }
 }
-.mt-140{
+
+.mt-140 {
   margin-top: 140px;
 }
-.pt-30{
+
+.pt-30 {
   padding-top: 30px;
-  @media(max-width:768px){
+  @media (max-width: 768px) {
     padding-top: 24px;
   }
 }
+
 .container--dark {
   background: @pr;
 
@@ -117,17 +120,19 @@ button {
 }
 
 .visible-mobile {
-  display: none!important;
+  display: none !important;
   @media (max-width: 767px) {
-    display: block!important;
+    display: block !important;
   }
 }
-.big-button.visible-mobile{
-  display: none!important;
+
+.big-button.visible-mobile {
+  display: none !important;
   @media (max-width: 767px) {
-    display: inline-block!important;
+    display: inline-block !important;
   }
 }
+
 .visible-laptop {
   display: block;
   @media (max-width: 1199px) {
@@ -141,17 +146,18 @@ button {
     display: block;
   }
 }
+
 .big-button.visible-desk,
 .visible-desk {
-  display: block!important;
+  display: block !important;
   @media (max-width: 767px) {
-    display: none!important;
+    display: none !important;
   }
 }
 
 .hide-tablet {
   @media (min-width: 768px) and (max-width: 991px) {
-    display: none!important;
+    display: none !important;
   }
 }
 
@@ -201,7 +207,8 @@ button {
     line-height: 44px;
   }
 }
-.decor-text{
+
+.decor-text {
   line-height: 1.28;
 }
 
@@ -250,7 +257,7 @@ h4 {
   font-family: @rr;
 }
 
-.text-3.bold{
+.text-3.bold {
   font-weight: 700;
 }
 
@@ -274,7 +281,7 @@ h4 {
   font-weight: bold;
 }
 
-.text-80{
+.text-80 {
   font-size: 80px;
   line-height: 0.8;
 }
@@ -311,19 +318,22 @@ h4 {
   white-space: nowrap;
   border-radius: 3px;
 }
-.badge.badge--small{
+
+.badge.badge--small {
   font-size: 14px;
   height: 29px;
   line-height: 29px;
   padding-left: 10px;
   padding-right: 10px;
-  border-radius:3px;
+  border-radius: 3px;
 
 }
-.badge-block{
+
+.badge-block {
   display: flex;
 }
-.round-badge{
+
+.round-badge {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,15 +343,19 @@ h4 {
   border-radius: 18px;
   display: inline-block;
 }
+
 .badge.badge--red {
   background-color: #ED805F;
 }
+
 .badge.badge--blue {
   background-color: #2F80ED;
 }
-.badge.badge-dark{
+
+.badge.badge-dark {
   background-color: @fg;
 }
+
 .text-link {
   color: @pr;
   padding-bottom: 5px;
@@ -409,7 +423,7 @@ h4 {
   position: absolute;
   left: 0;
   height: 2px;
-  
+
   background-color: @pr;
   right: 0;
   -webkit-transition: .3s;
@@ -453,11 +467,12 @@ h4 {
   }
 }
 
-.bubble-dark{
+.bubble-dark {
   background-color: #252A34;
   border-radius: 50px;
   position: relative;
-  &:after{
+
+  &:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -470,15 +485,16 @@ h4 {
     border-top-color: transparent;
     border-bottom-color: transparent;
   }
-  @media(max-width:767px){
+
+  @media (max-width: 767px) {
     border-radius: 20px;
-    &:after{
-      border-width:40px;
+    &:after {
+      border-width: 40px;
     }
   }
 }
 
-.bubble-block{
+.bubble-block {
   width: fit-content;
   background-color: #2F80ED;
   border-radius: 50px;
@@ -488,14 +504,15 @@ h4 {
   padding-left: 50px;
   padding-right: 60px;
   font-family: @cm;
-  @media(max-width:767px){
+  @media (max-width: 767px) {
     padding-top: 10px;
     padding-bottom: 14px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 20px;
   }
-  &:after{
+
+  &:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -508,27 +525,30 @@ h4 {
     border-top-color: transparent;
     border-bottom-color: transparent;
     z-index: 1;
-    @media(max-width:767px){
-      border-width:20px;
+    @media (max-width: 767px) {
+      border-width: 20px;
     }
   }
-  p{
+
+  p {
     position: relative;
     z-index: 2;
     font-size: 28px;
     line-height: 40px;
     color: #fff;
-    @media(max-width:767px){
+    @media (max-width: 767px) {
       font-size: 20px;
       line-height: 1.4;
     }
   }
 }
-.bubble-block.tail-right{
-  &:after{
+
+.bubble-block.tail-right {
+  &:after {
     display: none;
   }
-  &:before{
+
+  &:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -541,24 +561,26 @@ h4 {
     border-top-color: transparent;
     border-bottom-color: transparent;
     z-index: 1;
-    @media(max-width:767px){
-      border-width:20px;
+    @media (max-width: 767px) {
+      border-width: 20px;
     }
   }
 }
 
-.bubble-grey{
+.bubble-grey {
   background-color: #363E4D;
   border-radius: 50px 50px 10px 50px;
   position: relative;
   font-family: @rr;
-  @media(max-width: 767px){
+  @media (max-width: 767px) {
     border-radius: 20px 20px 0 20px;
   }
-  &:after{
+
+  &:after {
     display: none;
   }
-  &:before{
+
+  &:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -571,24 +593,26 @@ h4 {
     border-top-color: transparent;
     border-bottom-color: transparent;
     z-index: 1;
-    @media(max-width:767px){
-      border-width:20px;
+    @media (max-width: 767px) {
+      border-width: 20px;
     }
   }
 }
 
-.bubble-red{
+.bubble-red {
   background-color: #EE7550;
   border-radius: 50px;
   position: relative;
   font-family: @rr;
-  @media(max-width: 767px){
+  @media (max-width: 767px) {
     border-radius: 20px;
   }
-  &:after{
+
+  &:after {
     display: none;
   }
-  &:before{
+
+  &:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -597,12 +621,44 @@ h4 {
     width: 0;
     height: 0;
     border: 30px solid #EE7550;
-    border-right: 0;
+    border-left: 0;
     border-top-color: transparent;
     border-bottom-color: transparent;
     z-index: 1;
-    @media(max-width:767px){
-      border-width:20px;
+    @media (max-width: 767px) {
+      border-width: 20px;
+    }
+  }
+}
+
+.bubble-green.tail-right {
+  background-color: @green;
+  border-radius: 50px;
+  position: relative;
+  font-family: @rr;
+  @media (max-width: 767px) {
+    border-radius: 20px;
+  }
+
+  &:after {
+    display: none;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 8.5%;
+    transform: translateY(50%);
+    width: 0;
+    height: 0;
+    border: 30px solid @green;
+    border-left: 0;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    z-index: 1;
+    @media (max-width: 767px) {
+      border-width: 20px;
     }
   }
 }
