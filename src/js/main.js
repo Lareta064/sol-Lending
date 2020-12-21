@@ -64,6 +64,7 @@ $(document).ready(function () {
 	function stopAllVideos(){
 		for(let vid of videoContents){
 			vid.querySelector('video').pause();
+			
 			vid.querySelector('.btn-play').style.opacity = "1";
 		}
 	}
