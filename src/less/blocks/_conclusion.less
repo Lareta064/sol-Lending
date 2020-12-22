@@ -1,12 +1,30 @@
 .conclusion {
+  position: relative;
   margin-top: 240px;
   @media (max-width: 767px) {
     margin-top: 140px;
   }
 
+  .emoji-block {
+    width: 300px;
+    position: absolute;
+    right: 35px;
+    bottom: -80px;
+
+    @media (min-width: 768px) and (max-width: 992px){
+      width: 250px;
+      z-index: 3;
+    }
+    @media (max-width: 767px) {
+      width: 100px;
+      right: 20px;
+      bottom: -11px;
+    }
+  }
+
 
   .conclusion-content {
-    position: relative;
+    //position: relative;
     background-color: #FFFFFF;
     border-radius: 20px 20px 20px 100px;
     padding-top: 40px;
@@ -19,22 +37,7 @@
       padding-right: 20px;
     }
 
-    .emoji-block {
-      width: 300px;
-      position: absolute;
-      right: -45px;
-      bottom: -80px;
-      
-      @media (min-width: 768px) and (max-width: 992px){
-        width: 250px;
-        z-index: 3;
-      }
-      @media (max-width: 767px) {
-        width: 100px;
-        right: 20px;
-        bottom: -11px;
-      }
-    }
+
 
   }
 
