@@ -76,6 +76,7 @@
 .review-content {
   height: 980px;
   overflow: hidden;
+  
   .tr;
   @media (max-width: 1364px) {
     height: 896px;
@@ -90,7 +91,22 @@
     height: 1327px;
   }
 }
+.review-content.hide{
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    background: rgba(247, 247, 245, 1.0);
 
+background: linear-gradient(to top, rgba(247, 247, 245, 1.0) 15%, rgba(247, 247, 245, 0.0) 100%);
+   
+  height: 200px;
+  z-index: 10;   
+  }
+}
 .review {
   position: relative;
   @media (max-width: 767px) {
