@@ -51,7 +51,8 @@ $(document).ready(function () {
 	if(reviewContent){
 		btnShowReviewContent.addEventListener('click', function(){
 			
-			this.classList.add('hide');
+		this.classList.add('hide');
+		reviewContent.classList.remove('hide');
 		let fullReviewHeight = document.querySelector('.review-wrapper').clientHeight;
 		let heightValue = +fullReviewHeight+'px';
 		reviewContent.setAttribute('style', `height: ${heightValue}`);
