@@ -87,8 +87,8 @@
 
     .result-row + .result-row {
       margin-top: 67px;
-      @media (max-width: 767px) {
-        margin-top: 81px;
+      @media (max-width: 991px) {
+        margin-top: 84px;
       }
     }
 
@@ -136,7 +136,7 @@
       padding-right: 40px;
       padding-bottom: 40px;
       padding-left: 30px;
-      @media (max-width: 767px) {
+      @media (max-width: 991px) {
         padding-top: 20px;
         padding-right: 20px;
         padding-bottom: 30px;
@@ -158,8 +158,10 @@
         max-width: 850px;
       }
 
-      @media (max-width: 767px) {
+      @media (max-width: 991px) {
         margin-top: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
       }
 
       .badge {
@@ -172,12 +174,17 @@
 
       p {
         line-height: 1.37;
+
       }
 
       p.text-3 {
         font-weight: 700;
         margin-bottom: 10px;
         margin-top: 12px;
+        @media(max-width: 991px){
+          line-height: 1.33;
+          margin-top: 14px;
+        }
       }
 
       .img-block {
