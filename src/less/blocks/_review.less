@@ -1,10 +1,11 @@
 .review {
   margin-top: 287px;
-  @media (max-width: 767px) {
-    margin-top: 90px;
+  @media (max-width: 991px) {
+    margin-top: 137px;
   }
-
-
+  //@media (max-width: 767px) {
+  //  margin-top: 90px;
+  //}
 }
 
 .review-head {
@@ -16,7 +17,8 @@
     margin-bottom: 20px;
     position: relative;
     width: fit-content;
-    span{
+
+    span {
       position: absolute;
       right: -64px;
       top: 4px;
@@ -25,9 +27,10 @@
       height: 36px;
       padding-left: 14px;
       padding-right: 14px;
-      line-height:36px ;
+      line-height: 36px;
       background-color: @blue;
     }
+
     @media (max-width: 767px) {
       margin-bottom: 30px;
     }
@@ -38,7 +41,7 @@
       max-width: 500px;
     }
 
-    @media(max-width: 374px){
+    @media (max-width: 374px) {
       font-size: 17px;
     }
   }
@@ -75,7 +78,7 @@
 .review-content {
   height: 980px;
   overflow: hidden;
-  
+
   .tr;
   @media (max-width: 1364px) {
     height: 896px;
@@ -90,9 +93,11 @@
     height: 1327px;
   }
 }
-.review-content.hide{
+
+.review-content.hide {
   position: relative;
-  &:after{
+
+  &:after {
     content: '';
     position: absolute;
     bottom: -20px;
@@ -100,12 +105,13 @@
     right: 0;
     background: rgba(247, 247, 245, 1.0);
 
-background: linear-gradient(to top, rgba(247, 247, 245, 1.0) 15%, rgba(247, 247, 245, 0.0) 100%);
-   
-  height: 200px;
-  z-index: 10;   
+    background: linear-gradient(to top, rgba(247, 247, 245, 1.0) 15%, rgba(247, 247, 245, 0.0) 100%);
+
+    height: 200px;
+    z-index: 10;
   }
 }
+
 .review {
   position: relative;
   @media (max-width: 767px) {
@@ -129,14 +135,15 @@ background: linear-gradient(to top, rgba(247, 247, 245, 1.0) 15%, rgba(247, 247,
 
 .review-content_btn {
   margin-top: 75px;
-  @media(max-width: 767px){
+  @media (max-width: 767px) {
     margin-top: 60px;
   }
 
   button.hide {
     display: none;
   }
-  .medium-button{
+
+  .medium-button {
     height: 100px;
     padding-left: 50px;
     padding-right: 50px;
@@ -167,7 +174,7 @@ background: linear-gradient(to top, rgba(247, 247, 245, 1.0) 15%, rgba(247, 247,
     }
     @media (max-width: 767px) {
       width: 335px;
-      height: 193px;
+      height: 630px;
     }
   }
 }
