@@ -43,8 +43,10 @@ $(document).ready(function () {
 	// }
 
 
-
-   
+	//LAZY
+	$(function () {
+		$('.lazy').lazy();
+	});
 	//  show Reviews
 	const reviewContent = document.getElementById('review-content');  
 	const btnShowReviewContent = document.getElementById('showReview'); 
@@ -82,12 +84,18 @@ $(document).ready(function () {
 					stopAllVideos();
 					videoClip.play();
 					videoBtn.style.opacity = "0";
-					bubbleBlock.style.opacity = "0";
+					if(bubbleBlock){
+						bubbleBlock.style.opacity = "0";
+					}
+					
 					
 				} else {
 					videoClip.pause();
 					videoBtn.style.opacity = "1";
-					bubbleBlock.style.opacity = "1";
+					if(bubbleBlock){
+						bubbleBlock.style.opacity = "1";
+					}
+					
 					
 				}
 				
